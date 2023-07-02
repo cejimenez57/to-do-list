@@ -4,11 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Kalam&family=Nanum+Myeongjo&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>ToDo List</title>
+    <link rel="icon" href="/title-log.png">
 </head>
 
 <body>
+    <div class="main-container">
+        <div class="todo-header">
+            <!-- Logo does not look good -->
+            <!-- <img src="/to-do-list.png" alt="todo"> -->
+            <h1><span>My To</span><span>Do List</span></h1>
+        </div>
 
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Add a todo" class="todo-input">
+            <button class="todo-btn">Create</button>
+        </form>
+
+        <div class="todo-container">
+            <div class="todo-task">
+                <div class="todo-status">
+                    <div class="open-todo">Open Todos 0</div>
+                    <div class="close-todo">Finished Todo 0</div>
+                </div>
+                <div class="todo-list">
+                    <div class="todo-list-items">
+                        <ul class="todo-item">
+                            <!-- <div class="todo">
+                                <input type="radio">
+                                <li></li>
+                                <button>Delete</button>
+                            </div> -->
+                        </ul>
+                    </div>
+                    <div class="active">
+                        <img src="/task-list.png" alt="list">
+                        <p class="first">There are currently no task available</p>
+                        <p class="second">Create new task</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>
